@@ -10,13 +10,12 @@
 
 \usepackage{fontspec}
 \setmainfont{Calibri} [
-  Path           =/home/maskhan/Projects/Resume/Fonts/,
-  Extension      =.ttf,
-  Ligatures      =TeX,
-  BoldFont       =Calibri_Bold,
-  ItalicFont     =Calibri_Italic,
-  BoldItalicFont =Calibri_Bold_Italic
-  % LightItalicFont =Calibri_Light_Italic
+  Path           = /home/maskhan/Projects/Resume/Fonts/,
+  Extension      = .ttf,
+  Ligatures      = TeX,
+  BoldFont       = Calibri_Bold,
+  ItalicFont     = Calibri_Italic,
+  BoldItalicFont = Calibri_Bold_Italic
 ]
 %
 % 
@@ -24,6 +23,13 @@
 \pagestyle{empty}
 
 \usepackage{subfiles} % Best loaded last in the preamble
+
+\newcommand\textFontSize{10.5}
+\newcommand\textFontBox{12}
+\newcommand\jobHeaderDist{-1.5 mm}
+\newcommand\listItemDist{-3 mm}
+\newcommand\listItemDistTwo{-5 mm}
+\newcommand\listHeight{-7 mm}
 
 \title{Masaad Khan Resume}
 \author{Masaad}
@@ -46,6 +52,7 @@
 \rule{18.5cm}{0.4pt}
 %
 \subfile{sections/Intel}
+\vspace{-2 mm}
 % Helped script bazel workflow updates
 \subfile{sections/Tenstorrent}
 \subfile{sections/Tesla}
