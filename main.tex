@@ -31,6 +31,7 @@
 \newcommand\listItemDist{-3 mm}
 \newcommand\listItemDistTwo{-4 mm}
 \newcommand\listHeight{-6 mm}
+\newcommand\titleheadersize{11}
 
 \title{Masaad Khan Resume}
 \author{Masaad}
@@ -38,39 +39,56 @@
 
 \begin{document}
 %
-\noindent{\Huge{\textbf{Masaad Khan}}}
-\vspace{-0.2mm}\newline
+% \noindent{\Huge{\textbf{Masaad Khan}}}
+% {\fontsize{12}{14}\selectfont Masaad Khan}
+\begin{center}
+  {\fontsize{20}{24}\selectfont \textbf{Masaad Khan}}\newline
+  {\fontsize{\titleheadersize}{14}\selectfont Bay Area, California} | {\fontsize{\titleheadersize}{14}\selectfont Austin, Texas}\newline
+  {\fontsize{\titleheadersize}{14}\selectfont (408) 202-8830} • {\fontsize{\titleheadersize}{14}\selectfont linkedin.com/in/masaad-khan} • {\fontsize{\titleheadersize}{14}\selectfont github.com/mkhan825} • {\fontsize{\titleheadersize}{14}\selectfont mak4668@utexas.edu}
+\end{center}
 %
-{\fontsize{12}{14}\selectfont 408-202-8830}{\fontsize{14}{16}\selectfont · }
-{\fontsize{12}{14}\selectfont mak4668@utexas.edu}
-{\fontsize{12}{14}\selectfont linkedin.com/in/masaad-khan}
-{\fontsize{12}{14}\selectfont github.com/mkhan825}
-{\fontsize{12}{14}\selectfont Bay Area, CA}\newline
+% \vspace{-0.2mm}\newline
+%
+\vspace{-8 mm}
 %
 %
-\textbf{{\fontsize{12}{14}\selectfont WORK EXPERIENCE}}
-\vspace{-3.8mm}\newline
-\rule{18.5cm}{0.4pt}
+\rule{18.5cm}{0.4pt}\vspace{-0.75mm}
+\noindent\textbf{{\fontsize{12}{14}\selectfont EDUCATION}}
+% \newline
+\vspace{-1mm}\newline
+% \vspace{3.8mm}\newline
+\subfile{sections/Education}
+\vspace{-1mm}
 %
+%
+\noindent\rule{18.5cm}{0.4pt}
+\noindent\textbf{{\fontsize{12}{14}\selectfont WORK EXPERIENCE}}
+\vspace{-0.25mm}\newline
+% \vspace{-3.8mm}\newline
+%
+% Need to play around with the newlines here in work exp
 \subfile{sections/Intel}
 \vspace{\jobDist}
+% \vspace{1cm}
 % Helped script bazel workflow updates
+% Helped create our bazel validation infrastructure to compile our verilog source
 \subfile{sections/Tenstorrent}
 \vspace{\jobDist}
 \subfile{sections/Tesla}
+\vspace{-1mm}
 %
 %
-\textbf{{\fontsize{12}{14}\selectfont RESEARCH}}\newline
-\vspace{-0.8cm}\newline
-\rule{18.5cm}{0.4pt}
+\noindent\rule{18.5cm}{0.4pt}
+\noindent\textbf{{\fontsize{12}{14}\selectfont RESEARCH}}\newline
+\vspace{-5.5mm}\newline
 %
 \subfile{sections/WNCG}
 \vspace{0cm}
 %
 %
+\noindent\rule{18.5cm}{0.4pt}
 \noindent\textbf{{\fontsize{12}{14}\selectfont PROJECTS}}\newline
 \vspace{-0.8cm}\newline
-\rule{18.5cm}{0.4pt}
 %
 \subfile{sections/CPU_SIM}
 \vspace{0cm}
